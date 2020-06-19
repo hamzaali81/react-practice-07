@@ -1,26 +1,24 @@
+//Stateless functional components
+//class based components
+//state, life cycle methods
+//React hooks
+//classes- Syntactical sugar for contrctor functions
+//subclass of Component 
+//extends functionality
+//Component class is used to transfer from basic Es6 class.
+
+
+
+// state, this.setState = hold/access/change data of component
+// props =read only
+
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
+import BookList from './BookList' 
+import './App.css'
+const App=()=>(
+  <section>
+    <BookList />
+  </section>
+)
+ 
 export default App;
